@@ -1,15 +1,15 @@
-package com.saucedemo;
+package com.orangehrm.tests;
 
 
 import com.codeborne.selenide.Selenide;
-import com.saucedemo.pages.LoginPage;
+import com.orangehrm.pages.LoginPage;
 import org.junit.jupiter.api.Test;
 
-class TestEnterUser {
+class AddEmployeeTest {
 
     @Test
-    void testEnterUser(){
-        Selenide.open("https://www.saucedemo.com/v1/");
+    void testAddEmployee(){
+        Selenide.open("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
         new LoginPage()
                 .loginToApp();

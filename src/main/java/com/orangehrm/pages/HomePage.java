@@ -1,6 +1,6 @@
-package com.saucedemo.pages;
+package com.orangehrm.pages;
 
-import com.saucedemo.pages.pageComponents.LeftMenuComponent;
+import com.orangehrm.pages.pageComponents.LeftMenuComponent;
 
 public class HomePage {
 

@@ -1,4 +1,4 @@
-package com.saucedemo.pages.pageComponents;
+package com.orangehrm.pages.pageComponents;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selectors;
@@ -9,5 +9,6 @@ public class LeftMenuComponent {
     public void  selectOptionFromLeftMenuBar (String menuOption){
 
         Selenide.$(Selectors.byText(menuOption)).shouldBe(Condition.enabled).click();
+
     }
 }
