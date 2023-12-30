@@ -15,6 +15,7 @@
     </properties>
 
     <dependencies>
+
         <!-- https://mavenlibs.com/maven/dependency/com.codeborne/selenide -->
         <dependency>
             <groupId>com.codeborne</groupId>

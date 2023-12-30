@@ -17,6 +17,8 @@ class AddEmployeeTest {
                 .getLeftMenuComponent()
                 .selectOptionFromLeftMenuBar("PIM");
 
-        new EmployeeInformationPage().addNewEmployee();
+        new EmployeeInformationPage()
+                .addNewEmployee()
+                .checkWhetherEmployeeCreatedSuccessfully();
     }
 }
