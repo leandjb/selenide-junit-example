@@ -1,4 +1,4 @@
-package com.orangehrm.pages.entity;
+package com.orangehrm.entity;
 
 public class EmployeeDetails {
 

@@ -4,6 +4,7 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.junit5.TextReportExtension;
 import com.orangehrm.pages.EmployeeInformationPage;
 import com.orangehrm.pages.LoginPage;
+import com.orangehrm.pages.pageComponents.LeftMenuComponentType;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
@@ -15,10 +16,10 @@ class AddEmployeeTest {
 
         Selenide.open("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
-        new LoginPage()
+        LoginPage.getInstance()
                 .loginToApplication()
                 .getLeftMenuComponent()
-                .selectOptionFromLeftMenuBar("PIM");
+                .selectOptionFromLeftMenuBar(LeftMenuComponentType.PIM);
 
         new EmployeeInformationPage()
                 .addNewEmployee()

@@ -6,9 +6,9 @@ import com.codeborne.selenide.Selenide;
 
 public class LeftMenuComponent {
 
-    public void  selectOptionFromLeftMenuBar (String menuOption){
+    public void  selectOptionFromLeftMenuBar (LeftMenuComponentType menuType){
 
-        Selenide.$(Selectors.byText(menuOption)).shouldBe(Condition.enabled).click();
+        Selenide.$(Selectors.byText(menuType.getMenuName())).shouldBe(Condition.enabled).click();
 
     }
 }
